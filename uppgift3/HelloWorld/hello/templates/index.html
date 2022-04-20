@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %} Home {% endblock%}</title>
+    <link rel="stylesheet" href="{% static 'hello/style.css' %}">
+</head>
+<body>
+    
+    {% block content %}
+   
+    <h1>Hello this is my index</h1>
+    <p>Det här är en hemsida med dynamisk datagenerering</p>
+    {% endblock %}
+</body>
+</html>
